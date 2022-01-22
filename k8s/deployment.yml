@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: app
-          image: mavinici/conversao-temperatura
+          image: voyager123/voyager-front
           ports:
-            - containerPort: 8080
+            - containerPort: 80
 
 ---
 
@@ -31,6 +31,6 @@ spec:
     app: app
   ports:
     - protocol: TCP
-      port: 8080
+      port: 80
       nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
