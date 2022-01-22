@@ -26,5 +26,5 @@ jobs:
           push: true
           tags: 
             mavinici/conversao-temperatura:latest
-            mavinici/conversao-temperatura:$ {{ github.run_number }}
+            mavinici/conversao-temperatura:${{ github.run_number }}
             
