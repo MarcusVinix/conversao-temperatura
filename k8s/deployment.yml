@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: voyager123/voyager-front
+          image: mavinici/conversao-temperatura
           ports:
             - containerPort: 80
 
